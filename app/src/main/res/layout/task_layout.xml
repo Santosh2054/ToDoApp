@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bgitemdoes"
+    android:paddingBottom="5dp"
+
+    android:paddingTop="5dp"
+    tools:context="com.example.todoappmvvm.tasks.MainActivity">
+
+    <TextView
+        android:id="@+id/priorityTextView"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/priority_circle"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@android:color/primary_text_light"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitle"
+            android:text="Title"
+            android:textColor="@android:color/primary_text_light"
+            style="@style/TextAppearance.AppCompat.Large"
+            />
+
+        <TextView
+            android:id="@+id/taskDescription"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/secondary_text_light"
+            tools:text="Description"
+            android:paddingTop="15dp"/>
+
+        <!-- TextView that displays the update date -->
+        <TextView
+            android:id="@+id/taskUpdatedAt"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:textColor="#0C5A10"
+
+            tools:text="11/11/1111" />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <!-- A priority circle that is colored in programmatically in the adapter code -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/tvTarget"
+        android:text="Target"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="#9F2424"
+        style="@style/TextAppearance.AppCompat.Large"/>
+
+</LinearLayout>

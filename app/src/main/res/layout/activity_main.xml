@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F4F4F4"
+    android:layout_height="match_parent"
+    tools:context=".tasks.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#106E4A"
+        android:layout_height="198dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/titlepage"
+                    android:layout_marginTop="20dp"
+                    android:textSize="32sp"
+                    android:textColor="#FFFFFF"
+                    android:text="My Todo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/subtitlepage"
+                    android:textSize="18sp"
+                    android:textColor="#B5BAE3"
+                    android:text="Finish Schedule Work quickly today"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:background="#FF106E4B"
+            android:layout_height="1dp"/>
+
+
+    </LinearLayout>
+
+    <!-- RecyclerView that is responsible for holding a listtaskEntrytask data -->
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-120dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="16dp"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <!-- Floating action button that launches AddTaskActivity when clicked -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="25dp"
+        android:src="@drawable/ic_add"
+        android:tint="@android:color/white"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>
